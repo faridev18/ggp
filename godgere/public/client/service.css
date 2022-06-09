@@ -1,0 +1,256 @@
+.service-content{
+	margin: 20px 10px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 765px){
+	.service-content{
+		grid-template-columns: 1fr;
+	}
+}
+
+.service-bloc{
+  padding: 2%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  margin-bottom: 13px;
+  background-color: white;
+}
+.partie1 h1{
+	font-size: 3rem;
+}
+.partie1 h2{
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 7px 0;
+}
+.partie1 i{
+	color: blue;
+}
+
+.partie2 li{
+	list-style-type: initial;
+	margin: 0 20px;
+}
+.partie2 p{
+	margin-bottom: 10px;
+}
+.partie3{
+	text-align: center;
+}
+.partie3 .img0{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin:15px auto;
+}
+.stat-bloc{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.stat-col h1{
+	padding: 5px;
+}
+
+.stat-bloc .droite{
+	text-align: right;
+}
+
+.comment td{
+  border: none;
+}
+.comment tr{
+  border-bottom: black solid 1px;
+  margin-bottom: 5px;
+  border-collapse: 1;
+}
+.comment td:nth-child(1) {
+  text-align: center;
+}
+.comment td:nth-child(1) div{
+  margin: auto;
+}
+.comment td xi{
+	color: blue;
+}
+
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.form-group h2{
+	padding: 5px;
+	border-bottom: 1px blue solid;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.box-comm {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+  height: 35px;
+  margin: 8px auto;
+  background-color: #65acff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.commander{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.commander .tot-prix{
+	background-color: #0b6dc3;
+	  padding:8px 5px;
+	  color: white;
+}
+
+.commander .but{
+	  padding:8px 5px;
+	  color: white;
+}
+.jours{
+  background-color: green;
+  border-radius: 5px;
+  padding: 2px;
+  color: white;
+}
+
+/* rating */
+.rating-css div {
+  color: #ffe400;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.rating-css input {
+  display: none;
+}
+.rating-css input + label {
+  font-size: 40px;
+  text-shadow: 1px 1px 0 #8f8420;
+  cursor: pointer;
+}
+.rating-css input:checked + label ~ label {
+  color: #b4afaf;
+}
+.rating-css label:active {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .but-note{
+    margin: auto;
+    text-align: center;
+  }
+  .but-note input{
+    margin: auto;
+    width: 300px;
+    height: 30px;
+  }
+  .icolor{
+    color: #0b6dc3;
+  }
