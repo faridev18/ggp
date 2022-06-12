@@ -8,7 +8,7 @@
           <li><a href="{{URL::to('/dashboard')}}">Service admin</a></li>
           @endif
           @if (Session::get('client.type_compte')==1)
-          <li><a href="{{URL::to('/dashboard')}}">Devenir Freelancer</a></li>
+          <li><a href="{{URL::to('/devenir-freelancer')}}">Devenir Freelancer</a></li>
           @endif
         @endif
         

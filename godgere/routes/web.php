@@ -41,6 +41,8 @@ Route::post('/updateprofil',[ClientController::class, 'updateprofil']);
 Route::get('/search',[ClientController::class, 'search']);
 Route::get('/chat/{id}',[ClientController::class, 'chat']);
 Route::post('/sendchat',[ClientController::class, 'sendchat']);
+Route::get('/devenir-freelancer',[ClientController::class, 'devenirfreelancer']);
+Route::post('/become',[ClientController::class, 'become']);
 
 
 

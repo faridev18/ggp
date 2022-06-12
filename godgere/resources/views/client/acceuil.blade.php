@@ -39,7 +39,7 @@
 
 
   <section class="skills">
-    <a href="devenir-freelancer.html"><div class="box-com">Devenir freelancer <i class="fa fa-arrow-right ani"></i></div></a>
+    <a href="{{URL::to('/devenir-freelancer')}}"><div class="box-com">Devenir freelancer <i class="fa fa-arrow-right ani"></i></div></a>
 
   <h1 class="heading">Microservices à la une </h1>
 

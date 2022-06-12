@@ -208,6 +208,29 @@ class ClientController extends Controller
         return back();
     }
 
+    public function devenirfreelancer()
+    {  
+        if (Session::has('client')) {
+            return view('client.devenir-freelancer');
+        }else{
+            return redirect('/login');
+        }
+    }
+    public function become(Request $request)
+    {
+        $this->validate($request, [
+            'condition_generale'=>'required']);
+
+            $nbr = 2;
+            $id = Session::get('client.id');
+            DB::table('clients')
+            ->where('id', $id)
+            ->limit(1)
+            ->update(array('type_compte' => $nbr));
+
+            // Session::put('client',$client);
+            return redirect('/dashboard');
+    }
 
     
 }
